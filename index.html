@@ -1,181 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assentine Academy | Job-Oriented Micro-Courses</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#f0f7ff',
-                            100: '#e0effe',
-                            500: '#0070f3',
-                            600: '#005bc2',
-                            900: '#031a33',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
-        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
-        .reveal.active { opacity: 1; transform: translateY(0); }
+        /* All the styling is here so you only need one file */
+        body { font-family: sans-serif; margin: 0; line-height: 1.6; color: #333; }
+        .header { background: #111; color: #fff; padding: 2rem; text-align: center; }
+        .section { padding: 3rem 10%; text-align: center; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-top: 2rem; }
+        .card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; }
+        .gold { color: #c5a059; font-weight: bold; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body>
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-                <div class="flex-shrink-0 flex items-center">
-                    <span class="text-2xl font-extrabold tracking-tight text-brand-900">ASSENTINE <span class="text-brand-500">ACADEMY</span></span>
-                </div>
-                <div class="hidden md:flex space-x-8 font-medium text-slate-600">
-                    <a href="#courses" class="hover:text-brand-500 transition-colors">Courses</a>
-                    <a href="#founder" class="hover:text-brand-500 transition-colors">About</a>
-                    <a href="#contact" class="hover:text-brand-500 transition-colors">Contact</a>
-                </div>
-                <a href="https://wa.me/919664559721" class="bg-brand-900 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-brand-500 transition-all">Enroll Now</a>
-            </div>
-        </div>
-    </nav>
-
-    <section class="pt-32 pb-20 lg:pt-48 lg:pb-32 px-4">
-        <div class="max-w-7xl mx-auto text-center">
-            <span class="inline-block py-2 px-4 rounded-full bg-brand-50 text-brand-600 font-bold text-sm mb-6 tracking-wide uppercase">Unlock Your Career Potential</span>
-            <h1 class="text-5xl md:text-7xl font-extrabold text-brand-900 mb-8 tracking-tight">Master Professional Skills <br><span class="text-brand-500 italic">In Under 90 Minutes.</span></h1>
-            <p class="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed">Practical, affordable, and job-oriented micro-courses designed to bridge the gap between education and employment.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#courses" class="bg-brand-500 text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-brand-600 transition-all shadow-xl shadow-brand-500/25">View Courses</a>
-                <a href="https://wa.me/919664559721" class="bg-white border border-slate-200 text-slate-900 px-10 py-4 rounded-2xl font-bold text-lg hover:bg-slate-50 transition-all">Chat with Us</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="courses" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
-                <h2 class="text-3xl md:text-5xl font-bold text-brand-900 mb-6 uppercase tracking-tighter">Assentine <span class="text-brand-500">Academy</span> Courses</h2>
-                <p class="text-slate-500 text-lg">High-value certifications starting at just ₹49.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-3xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-2xl transition-all duration-300 reveal">
-                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-brand-500 mb-6"><i class="fa-solid fa-user-tie"></i></div>
-                    <h3 class="text-xl font-bold text-brand-900 mb-4">Job Interview Cracking Mastery</h3>
-                    <div class="flex justify-between items-center mb-6 text-sm text-slate-500">
-                        <span><i class="fa-regular fa-clock mr-1"></i> 60 Min</span>
-                        <span class="font-bold text-xl text-brand-900">₹149</span>
-                    </div>
-                    <a href="https://wa.me/919664559721?text=I%20want%20to%20enroll%20in%20Interview%20Mastery" class="block text-center w-full bg-slate-900 hover:bg-brand-500 text-white py-3 rounded-xl font-medium transition-colors">Enroll Now</a>
-                </div>
-
-                <div class="bg-white rounded-3xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-2xl transition-all duration-300 reveal delay-100">
-                    <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center text-green-600 mb-6"><i class="fa-solid fa-laptop"></i></div>
-                    <h3 class="text-xl font-bold text-brand-900 mb-4">Basic Computer Skills for Jobs</h3>
-                    <div class="flex justify-between items-center mb-6 text-sm text-slate-500">
-                        <span><i class="fa-regular fa-clock mr-1"></i> 75 Min</span>
-                        <span class="font-bold text-xl text-brand-900">₹99</span>
-                    </div>
-                    <a href="https://wa.me/919664559721?text=I%20want%20to%20enroll%20in%20Computer%20Skills" class="block text-center w-full bg-slate-900 hover:bg-brand-500 text-white py-3 rounded-xl font-medium transition-colors">Enroll Now</a>
-                </div>
-
-                <div class="bg-white rounded-3xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-2xl transition-all duration-300 reveal delay-200">
-                    <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center text-purple-600 mb-6"><i class="fa-solid fa-landmark"></i></div>
-                    <h3 class="text-xl font-bold text-brand-900 mb-4">Banking & Loan Executive Training</h3>
-                    <div class="flex justify-between items-center mb-6 text-sm text-slate-500">
-                        <span><i class="fa-regular fa-clock mr-1"></i> 90 Min</span>
-                        <span class="font-bold text-xl text-brand-900">₹199</span>
-                    </div>
-                    <a href="https://wa.me/919664559721?text=I%20want%20to%20enroll%20in%20Banking%20Training" class="block text-center w-full bg-slate-900 hover:bg-brand-500 text-white py-3 rounded-xl font-medium transition-colors">Enroll Now</a>
-                </div>
-
-                <div class="bg-white rounded-3xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-2xl transition-all duration-300 reveal">
-                    <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center text-orange-600 mb-6"><i class="fa-solid fa-headset"></i></div>
-                    <h3 class="text-xl font-bold text-brand-900 mb-4">Customer Service & Telecalling Skills</h3>
-                    <div class="flex justify-between items-center mb-6 text-sm text-slate-500">
-                        <span><i class="fa-regular fa-clock mr-1"></i> 60 Min</span>
-                        <span class="font-bold text-xl text-brand-900">₹99</span>
-                    </div>
-                    <a href="https://wa.me/919664559721?text=I%20want%20to%20enroll%20in%20Customer%20Service" class="block text-center w-full bg-slate-900 hover:bg-brand-500 text-white py-3 rounded-xl font-medium transition-colors">Enroll Now</a>
-                </div>
-
-                <div class="bg-white rounded-3xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-2xl transition-all duration-300 reveal delay-100">
-                    <div class="w-12 h-12 bg-pink-50 rounded-xl flex items-center justify-center text-pink-600 mb-6"><i class="fa-solid fa-file-invoice"></i></div>
-                    <h3 class="text-xl font-bold text-brand-900 mb-4">Resume Building & Job Application Guide</h3>
-                    <div class="flex justify-between items-center mb-6 text-sm text-slate-500">
-                        <span><i class="fa-regular fa-clock mr-1"></i> 30 Min</span>
-                        <span class="font-bold text-xl text-brand-900">₹49</span>
-                    </div>
-                    <a href="https://wa.me/919664559721?text=I%20want%20to%20enroll%20in%20Resume%20Building" class="block text-center w-full bg-slate-900 hover:bg-brand-500 text-white py-3 rounded-xl font-medium transition-colors">Enroll Now</a>
-                </div>
-
-                <div class="bg-white rounded-3xl p-8 border border-slate-200 hover:border-brand-500 hover:shadow-2xl transition-all duration-300 reveal delay-200">
-                    <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center text-teal-600 mb-6"><i class="fa-solid fa-comments"></i></div>
-                    <h3 class="text-xl font-bold text-brand-900 mb-4">Workplace Communication Skills</h3>
-                    <div class="flex justify-between items-center mb-6 text-sm text-slate-500">
-                        <span><i class="fa-regular fa-clock mr-1"></i> 60 Min</span>
-                        <span class="font-bold text-xl text-brand-900">₹149</span>
-                    </div>
-                    <a href="https://wa.me/919664559721?text=I%20want%20to%20enroll%20in%20Communication%20Skills" class="block text-center w-full bg-slate-900 hover:bg-brand-500 text-white py-3 rounded-xl font-medium transition-colors">Enroll Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="founder" class="py-24 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="relative reveal">
-                    <div class="aspect-square bg-slate-200 rounded-3xl overflow-hidden shadow-xl border-8 border-white">
-                        <div class="w-full h-full flex items-center justify-center text-slate-400 bg-slate-100">
-                            <i class="fa-solid fa-user text-9xl"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="reveal delay-100">
-                    <h3 class="text-brand-500 font-bold mb-2 tracking-wider uppercase">Meet the Founder</h3>
-                    <h2 class="text-4xl font-bold text-brand-900 mb-6">Gaurav Trivedi</h2>
-                    <p class="text-slate-600 text-lg leading-relaxed mb-8">
-                        Founder of Assentine Academy, Gaurav brings hands-on experience in skill development and project management. His mission is to bridge the gap between education and employment by offering practical, affordable, and job-oriented courses for everyone.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-24 bg-brand-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-5xl font-bold mb-6 italic">Assentine Academy</h2>
-            <p class="text-slate-400 text-lg mb-12">An initiative by aarambh seva Foundation</p>
-            <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-12">
-                <div class="flex items-center space-x-3">
-                    <i class="fa-solid fa-envelope text-brand-500 text-2xl"></i>
-                    <span class="text-xl">assentinesolutions@gmail.com</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                    <i class="fa-brands fa-whatsapp text-[#25D366] text-2xl"></i>
-                    <span class="text-xl">+91 96645 59721</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-brand-900 py-16 border-t border-white/5 text-center">
-    <div class="max-w-7xl mx-auto px-4">
-        <p class="text-white font-bold mb-2">Assentine Solutions Private Limited</p>
-        <p class="text-slate-500 text-sm mb-4 tracking-widest uppercase">CIN: U70200GJ2025PTC168867</p>
-        <div class="w-12 h-0.5 bg-brand-500 mx-auto mb-6"></div>
-        <p class="text-slate-600 text-xs tracking-wide uppercase">
-            &copy; 2026 Assentine Academy. All rights reserved. Registered in Gujarat, India.
-        </p>
+    <div class="header">
+        <h1>ASSENTINE ACADEMY</h1>
+        <p>Your Path to Professional Excellence</p>
     </div>
-</footer>
+
+    <div class="section">
+        <h2>Our Programs</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Strategy</h3>
+                <p>Master corporate frameworks.</p>
+            </div>
+            <div class="card">
+                <h3>Leadership</h3>
+                <p>Lead teams with confidence.</p>
+            </div>
+            <div class="card">
+                <h3>Compliance</h3>
+                <p>Navigate complex regulations.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
